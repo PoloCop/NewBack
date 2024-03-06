@@ -6,4 +6,10 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\NewBack.Models\NewBack.Models.csproj" />
+      <ProjectReference Include="..\NewBack.Repository.Contracts\NewBack.Repository.Contracts.csproj" />
+      <ProjectReference Include="..\NewBack.Services.Contracts\NewBack.Services.Contracts.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -394,6 +394,16 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "NewBack.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/NewBack.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NewBack.Models.dll": {}
+        }
       }
     }
   },
@@ -1013,6 +1023,11 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "NewBack.Models/1.0.0": {
+      "type": "project",
+      "path": "../NewBack.Models/NewBack.Models.csproj",
+      "msbuildProject": "../NewBack.Models/NewBack.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1020,6 +1035,7 @@
       "Microsoft.EntityFrameworkCore >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0",
+      "NewBack.Models >= 1.0.0",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0-alpha.1"
     ]
   },
@@ -1048,7 +1064,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/paulbertelli/Desktop/Evaluation/NewBack/NewBack/NewBack.Models/NewBack.Models.csproj": {
+              "projectPath": "/Users/paulbertelli/Desktop/Evaluation/NewBack/NewBack/NewBack.Models/NewBack.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

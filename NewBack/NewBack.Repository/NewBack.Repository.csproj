@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\NewBack.DbContext\NewBack.DbContext.csproj" />
+      <ProjectReference Include="..\NewBack.Repository.Contracts\NewBack.Repository.Contracts.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using NewBack.Models;
 
 namespace NewBack.DbContext;
 
@@ -8,5 +9,8 @@ public class AppDbContext : Microsoft.EntityFrameworkCore.DbContext
     {
         
     }
+    
+    public DbSet<Event>? Events { get; set; }
+    
     // public DbSet<User>? Users { get; set; }
 }

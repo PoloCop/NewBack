@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "NewBack.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/NewBack.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NewBack.Models.dll": {}
+        }
+      },
+      "NewBack.Repository.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "NewBack.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NewBack.Repository.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NewBack.Repository.Contracts.dll": {}
+        }
+      },
+      "NewBack.Services.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "NewBack.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NewBack.Services.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NewBack.Services.Contracts.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "NewBack.Models/1.0.0": {
+      "type": "project",
+      "path": "../NewBack.Models/NewBack.Models.csproj",
+      "msbuildProject": "../NewBack.Models/NewBack.Models.csproj"
+    },
+    "NewBack.Repository.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../NewBack.Repository.Contracts/NewBack.Repository.Contracts.csproj",
+      "msbuildProject": "../NewBack.Repository.Contracts/NewBack.Repository.Contracts.csproj"
+    },
+    "NewBack.Services.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../NewBack.Services.Contracts/NewBack.Services.Contracts.csproj",
+      "msbuildProject": "../NewBack.Services.Contracts/NewBack.Services.Contracts.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "NewBack.Models >= 1.0.0",
+      "NewBack.Repository.Contracts >= 1.0.0",
+      "NewBack.Services.Contracts >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/paulbertelli/.nuget/packages/": {}
@@ -32,7 +89,17 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/paulbertelli/Desktop/Evaluation/NewBack/NewBack/NewBack.Models/NewBack.Models.csproj": {
+              "projectPath": "/Users/paulbertelli/Desktop/Evaluation/NewBack/NewBack/NewBack.Models/NewBack.Models.csproj"
+            },
+            "/Users/paulbertelli/Desktop/Evaluation/NewBack/NewBack/NewBack.Repository.Contracts/NewBack.Repository.Contracts.csproj": {
+              "projectPath": "/Users/paulbertelli/Desktop/Evaluation/NewBack/NewBack/NewBack.Repository.Contracts/NewBack.Repository.Contracts.csproj"
+            },
+            "/Users/paulbertelli/Desktop/Evaluation/NewBack/NewBack/NewBack.Services.Contracts/NewBack.Services.Contracts.csproj": {
+              "projectPath": "/Users/paulbertelli/Desktop/Evaluation/NewBack/NewBack/NewBack.Services.Contracts/NewBack.Services.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

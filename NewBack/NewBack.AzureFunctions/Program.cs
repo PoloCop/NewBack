@@ -3,6 +3,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NewBack.DbContext;
+using NewBack.Repository;
+using NewBack.Repository.Contracts;
+using NewBack.Services;
+using NewBack.Services.Contracts;
 
 public class Program
 {
@@ -18,7 +22,10 @@ public class Program
                         MySqlServerVersion.LatestSupportedServerVersion));
              
         
-      
+                services.AddScoped<IEventService,EventService>();
+
+        
+                services.AddScoped<IEventRepository,EventRepository>();
 
                 services.AddLogging();
 
