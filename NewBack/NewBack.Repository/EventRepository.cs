@@ -42,4 +42,14 @@ public class EventRepository : IEventRepository
         _context.Events.Update(eEvent);
         await _context.SaveChangesAsync();
     }
+    public async Task Delete(Guid eventId)
+    {
+        var eEvent = await Find(eventId);
+        _context.Events.Remove(eEvent);
+        await _context.SaveChangesAsync();
+    }
+    public async Task<Event> Find(Guid eventId)
+    {
+        return await _context.Events.Where(e => e.Id == eventId).FirstOrDefaultAsync();
+    }
 }
