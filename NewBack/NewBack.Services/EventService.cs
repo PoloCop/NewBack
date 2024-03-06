@@ -19,4 +19,8 @@ public class EventService : IEventService
     {
         return await _eventRepository.FindAll();
     }
+    public async Task Update(Event eEvent)
+    {
+        await _eventRepository.Update(eEvent);
+    }
 }

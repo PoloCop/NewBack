@@ -37,4 +37,9 @@ public class EventRepository : IEventRepository
     {
         return await _context.Events.ToListAsync();
     }
+    public async Task Update(Event eEvent)
+    {
+        _context.Events.Update(eEvent);
+        await _context.SaveChangesAsync();
+    }
 }
