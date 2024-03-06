@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/hV/J+VT2OeOhmI3RHA32W3/+MRlm39Sgax59sf7TPadOKr6VvENETWf+VK/LvD/SdSbiLaFgTYqBSO/8C0bRw==",
+  "success": true,
+  "projectFilePath": "/Users/paulbertelli/Desktop/Evaluation/NewBack/NewBack/NewBack.Services/NewBack.Services.csproj",
+  "expectedPackageFiles": [
+    "/Users/paulbertelli/.nuget/packages/microsoft.netcore.app.ref/7.0.12/microsoft.netcore.app.ref.7.0.12.nupkg.sha512",
+    "/Users/paulbertelli/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.12/microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
