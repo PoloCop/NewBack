@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NewBack.Services.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d81e90ed5403083cfc98d9bdb106f2dee4b287a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd76f76021240b758b8d8f73afeda5ddf24dfbfb")]
 [assembly: System.Reflection.AssemblyProductAttribute("NewBack.Services.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NewBack.Services.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

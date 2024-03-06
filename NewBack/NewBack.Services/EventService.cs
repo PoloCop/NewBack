@@ -15,4 +15,8 @@ public class EventService : IEventService
     {
         await _eventRepository.Add(eEvent);
     }
+    public async Task<IEnumerable<Event>> FindAll()
+    {
+        return await _eventRepository.FindAll();
+    }
 }

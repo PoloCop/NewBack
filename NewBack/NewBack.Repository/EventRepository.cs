@@ -1,4 +1,5 @@
-﻿using NewBack.DbContext;
+﻿using Microsoft.EntityFrameworkCore;
+using NewBack.DbContext;
 using NewBack.Models;
 using NewBack.Models.Exception;
 using NewBack.Repository.Contracts;
@@ -27,10 +28,13 @@ public class EventRepository : IEventRepository
             throw new AlreadyExistException("Event already exist!");
         }
     }
-    
     private bool UniqueEvent(Guid idEvent)
     {
 
         return !_context.Events.Any(e => e.Id == idEvent);
+    }
+    public async Task<IEnumerable<Event>> FindAll()
+    {
+        return await _context.Events.ToListAsync();
     }
 }
